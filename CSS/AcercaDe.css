@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.Menu{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.slideMenu{
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.5s ease;
+    transform: translateX(-180px);
+}
+.tituloMenu{
+    color: #8000ff;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+.ulMenu li{
+    list-style: none;
+}
+.ulMenu li a{
+    color: #011a41;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.ulMenu li:hover a{
+    color: #fff;
+    background-color: #8000ff;
+}
+
+.ulMenu li a i{
+    width: 40px;
+    text-align: center;
+}
+.inputMenu{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.toggleMenu{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.toggleMenu .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #8000ff;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggleMenu .top_line{
+    z-index: 1;
+    top: 30%;
+    left: 20%;
+    transition: translate(-50%, -50%);
+}
+
+.toggleMenu .middle_line{
+    z-index: 1;
+    top: 50%;
+    left: 20%;
+    transition: translate(-50%, -50%);
+}
+
+.toggleMenu .botton_line{
+    z-index: 1;
+    top: 70%;
+    left: 20%;
+    transition: translate(-50%, -50%);
+}
+
+.inputMenu:checked ~ .toggleMenu .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+.inputMenu:checked ~ .toggleMenu .botton_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+.inputMenu:checked ~ .toggleMenu .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.inputMenu:checked ~ .slideMenu{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* Importar una fuente de Google Fonts */
+
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('https://laguiadelasvitaminas.com/wp-content/uploads/2017/12/Cu%C3%A1les-Son-Los-6-Mejores-Suplementos-De-Creatina.jpg');
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #8000ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.transforma{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 1000;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: #011a41;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(111, 240, 240);
+    text-align: center;
+
+
+}
+
+h3 {
+    font-size: 30px;
+    color: #011a41;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(111, 240, 240);
+    text-align: center;
+
+
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+a {
+    color: #8000ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6b00cc;
+}
+
+.awards-heading {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.awards-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.awards-list {
+    list-style: none;
+    padding: 0;
+}
+
+.award-item {
+    font-size: 1.1rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.award-item::before {
+    content: '🏆';
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: gold;
+}
